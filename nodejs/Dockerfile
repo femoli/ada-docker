@@ -1,18 +1,21 @@
-# Usa a imagem oficial do Node.js como base
-FROM node
+# usa a imagem oficial do node.js como base - versão mais recente
+FROM node:latest
 
-# Define o diretório de trabalho dentro do contêiner
+# define o diretório de trabalho dentro do contêiner
 WORKDIR /nodejs
 
-# Copia os arquivos necessários para o diretório de trabalho
+# copia os arquivos necessários para o diretório de trabalho
 COPY package*.json ./
 COPY app.js .
 
-# Instala as dependências do projeto
+# copia o restante dos arquivos da aplicação
+COPY . .
+
+# instala as dependências do projeto
 RUN npm install
 
-# Expõe a porta em que o aplicativo irá ser executado
-EXPOSE 5000
+# expõe a porta em que o app irá ser executado
+EXPOSE 3000
 
-# Comando para iniciar o aplicativo
+# comando para iniciar o app
 CMD ["node", "app.js"]

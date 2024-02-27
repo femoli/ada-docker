@@ -1,11 +1,8 @@
-# Usa a imagem oficial do MongoDB como base
+# usa a imagem oficial do mongodb como base - versão mais recente
 FROM mongo:latest
 
-# Define o diretório de trabalho dentro do contêiner
+# define o diretório de trabalho dentro do contêiner
 WORKDIR /mongodb
 
-# Exponha a porta padrão do MongoDB (27017)
+# exponha a porta padrão do mongodb (padrão)
 EXPOSE 27017
-
-# Define a variável de ambiente para a URL de conexão do MongoDB
-ENV MONGO_URI=mongodb://0.0.0.0:27017/meu_db

@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   mongodb:
-    image: femoliv/mongodb:v2
+    image: femoliv/mongo:latest
     container_name: mongodb
     volumes:
       - mongodb_data:/data/db
@@ -12,7 +12,7 @@ services:
       - app_network
 
   nodejs:
-    image: femoliv/nodejs:v2
+    image: femoliv/node:latest
     container_name: nodejs
     build:
       context: ./nodejs
@@ -20,7 +20,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - MONGO_URI=mongodb://0.0.0.0:27017/meu_db
+      - MONGO_URI=mongodb://mongodb:27017/meu_db
     depends_on:
       - mongodb # dependência no serviço mongodb
     networks:
