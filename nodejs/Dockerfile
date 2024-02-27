@@ -12,7 +12,7 @@ COPY app.js .
 RUN npm install
 
 # Expõe a porta em que o aplicativo irá ser executado
-EXPOSE 3000
+EXPOSE 5000
 
 # Comando para iniciar o aplicativo
 CMD ["node", "app.js"]

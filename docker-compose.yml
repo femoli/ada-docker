@@ -16,7 +16,7 @@ services:
     container_name: nodejs
     build:
       context: ./nodejs
-      dockerfile: dockerfile
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     environment:

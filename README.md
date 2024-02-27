@@ -40,8 +40,7 @@ Essa é uma aplicação web simples de preenchimento de formulário.
 ## Estrutura do Projeto 📂
 
 ```
-projeto/
-│
+ada-docker/
 ├── nodejs/
 │   ├── Dockerfile
 │   ├── package.json
@@ -49,11 +48,13 @@ projeto/
 │   ├── app.js
 │   └── models/
 │       └── formData.js
-│
+│   └── public/
+│       └── index.html
 ├── mongodb/
 │   └── Dockerfile
-│
-└── docker-compose.yml
+├── docker-compose.yml
+├── node_modules/
+└── .dockerignore
 ```
 
 ## License
