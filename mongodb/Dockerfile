@@ -8,4 +8,4 @@ WORKDIR /mongodb
 EXPOSE 27017
 
 # Define a variável de ambiente para a URL de conexão do MongoDB
-ENV MONGO_URI=mongodb://localhost:27017/meu_db
+ENV MONGO_URI=mongodb://0.0.0.0:27017/meu_db
