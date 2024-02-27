@@ -25,9 +25,9 @@ app.use(express.json());
 // Configura o middleware para lidar com dados do formulário
 app.use(express.urlencoded({ extended: true }));
 
-// Rota para o formulário HTML
+// Rota para servir o arquivo index.html
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Rota para receber os dados do formulário
