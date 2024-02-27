@@ -1,0 +1,10 @@
+// models/formData.js
+
+const mongoose = require('mongoose');
+
+const formDataSchema = new mongoose.Schema({
+    name: String,
+    email: String
+});
+
+module.exports = mongoose.model('FormData', formDataSchema);
