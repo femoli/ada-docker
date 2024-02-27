@@ -20,9 +20,9 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - MONGO_URI=mongodb://mongodb:27017/mydatabase
+      - MONGO_URI=mongodb://mongodb:27017/meu_banco_dados
     depends_on:
-      - mongodb
+      - mongodb # dependência no serviço mongodb
     networks:
       - app_network
 

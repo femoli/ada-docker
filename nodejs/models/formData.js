@@ -1,5 +1,3 @@
-// models/formData.js
-
 const mongoose = require('mongoose');
 
 const formDataSchema = new mongoose.Schema({
