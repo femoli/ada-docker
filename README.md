@@ -6,8 +6,8 @@ Essa é uma aplicação web simples de preenchimento de formulário.
 
 ### Imagens Docker
 
-- **Node.js**: [Esta imagem](https://hub.docker.com/r/femoliv/nodejs) contém o ambiente de execução Node.js necessário para executar a aplicação web.
-- **MongoDB**: [Esta imagem](https://hub.docker.com/r/femoliv/mongodb) contém uma instância do banco de dados MongoDB, necessário para armazenar os dados da aplicação.
+- **Node.js**: [Esta imagem](https://hub.docker.com/r/femoliv/node) contém o ambiente de execução Node.js necessário para executar a aplicação web.
+- **MongoDB**: [Esta imagem](https://hub.docker.com/r/femoliv/mongo) contém uma instância do banco de dados MongoDB, necessário para armazenar os dados da aplicação.
 
 ## Funcionalidades 🚀
 
