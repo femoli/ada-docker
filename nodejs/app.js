@@ -1,8 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path');
 
 // Conecta ao banco de dados MongoDB
-mongoose.connect('mongodb://mongodb:27017/meu_db', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/meu_banco_dados');
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Erro de conexão com o banco de dados:'));
 db.once('open', () => {
